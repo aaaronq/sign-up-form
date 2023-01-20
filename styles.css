@@ -174,7 +174,11 @@ a {
     }
 
     .logocontainer{
-        top: 20%;
+        top: 30%
+    }
+
+    .logocontainer img {
+        width: 7.5em
     }
 
     .personalinfo {
