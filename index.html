@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="splashimg">
+        <div class="logocontainer">
+            <img src="./images/odin-lined.png" alt="Odin Project Logo">
+            <p>ODIN</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="maincontainer">
+            <div class="heading">
+                <h1> This is not a real online service! You know you need
+                    something like this in your life to help you realise 
+                    your deepest dreams. Sign up <em>now</em> to get started.
+                </h1>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <div class="formsection">
+                <h1>Let's do this!</h1>
+                <form action="#" id="signupform">
+                    <div class="personalinfo">
+                        <div class="form-control">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="tel">PHONE NUMBER</label>
+                            <input type="tel" id="tel" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="pwd">PASSWORD</label>
+                            <input class="error" type="pwd" id="pwd" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="pwdconfirm">CONFIRM PASSWORD</label>
+                            <input class="error" type="pwd" id="pwdconfirm" required>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit"> Create Account</button>
+                        <p>Already have an account? <a href="">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf)
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.splashimg {
+    background-image: url(./images/splashimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-width: 40vw;
+}
+
+.logocontainer {
+    background-color: rgb(0, 0, 0, 0.3);
+    position: relative;
+    height: fit-content;
+    top: 22.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logocontainer > p {
+    font-family: Norse-Bold;
+    font-size: 8.25rem;
+    color: white;
+    margin: 0;
+}
+
+.logocontainer > img {
+    width: 10em;
+}
+
+main {
+    box-sizing: border-box;
+    min-width: 60vw;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.heading {
+    width: fit-content;
+}
+
+.heading h1, .heading h2 {
+    margin-top: 2rem;
+    font-size: min(3rem, 40px);
+    color: black;
+}
+
+.heading h2 {
+    font-weight: lighter;
+}
+
+.formsection{
+    margin-top: 2rem;
+}
+
+.formsection h1 {
+    font-size: 2.5rem;
+}
+
+.maincontainer {
+    box-sizing: border-box;
+    padding: 5rem;
+    overflow: auto;
+    height: 100%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+
+.personalinfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding-bottom: 2rem;
+    box-shadow: 0px 4px 6px -3px rgba(0, 0, 0, .5);
+}
+
+
+.form-control {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-control input {
+    height: 2.5rem;
+    font-size: 17px;
+    border-color: rgb(197, 194, 194, 0.5);
+    border-radius: 8px;
+    outline: 0;
+}
+
+.form-control label {
+    letter-spacing: 0.25ch;
+    margin-bottom: 2px;
+}
+
+#signupform input:focus {
+	border: 2px solid #041f5f;
+    box-shadow: 1px 1px 1px 1px;
+    outline: 0;
+}
+
+#signupform input:valid {
+	border: 2px solid rgb(114, 197, 93);
+    outline: 0;
+}
+
+input.error {
+    border: 2px solid red;
+    outline: 0;
+}
+
+
+.buttons button {
+    width: 20%;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    outline: 0;
+    background-color: rgb(114, 197, 93);
+    font-size: 20px;
+    color: white;
+    letter-spacing: 0.1ch;
+}
+
+button:hover {
+    background-color: rgb(132, 207, 132);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(80, 113, 80);
+    cursor: pointer;
+}
+
+.buttons{
+    margin-top: 3.5rem;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(114, 197, 93);
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .splashimg{
+        min-height: 30vh;
+        min-width: auto;
+    }
+
+    .logocontainer{
+        top: 20%;
+    }
+
+    .personalinfo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .form-control {
+      width: 100%;
+    }
+
+    .buttons button {
+        width: 50%
+    }
+}
